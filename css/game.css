@@ -1,0 +1,30 @@
+/*//////////////////////////////
+// Styling for the game layout
+//////////////////////////////*/
+
+body {
+    font-family: Arial;
+    font-size: 20px;
+    background-color: #222;
+    color: #DDD;
+}
+
+.gameContainer {
+    max-width: 960px;
+    height: 475px;
+    margin: 0 auto;
+    border: 1px solid #DDD;
+    position: relative;
+}
+
+.gameArea {
+    border: 1px solid blue;
+    height: 94%;
+}
+
+.commands {
+    border: 1px solid green;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
