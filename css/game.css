@@ -4,9 +4,13 @@
 
 body {
     font-family: Arial;
-    font-size: 20px;
+    font-size: 14px;
     background-color: #222;
     color: #DDD;
+}
+
+*:focus {
+    outline: 0;
 }
 
 .gameContainer {
@@ -15,16 +19,68 @@ body {
     margin: 0 auto;
     border: 1px solid #DDD;
     position: relative;
+    border-radius: 25px;
 }
 
 .gameArea {
-    border: 1px solid blue;
-    height: 94%;
+    height: auto;
+    max-height: 410px;
+    margin: 5px 0;
+    padding: 5px 15px;
+    overflow: scroll;
+}
+
+.controls {
+    width: 100%;
+    border-top: 1px solid #DDD;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.actionBtn {
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #DDD;
+}
+
+.suggestionBox {
+    width: 35px;
+    font-size: 25px;
+    line-height: 45px;
+    text-align: right;
+    padding: 0 10px 2px 0;
+    cursor: help;
+}
+
+.suggestions {
+    width: 50px;
+    height: 50px;
+    display: none;
 }
 
 .commands {
-    border: 1px solid green;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    display: inline-block;
+    width: 82.25%;
+    height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 0;
+    margin: 0 -5px;
+    color: #EEE;
+    background-color: transparent;
+}
+
+.submit {
+    width: 75px;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    padding-bottom: 2px;
+    border-left: 1px solid #DDD;
 }
