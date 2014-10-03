@@ -7,11 +7,11 @@
   </head>
   <body>
     <div class="gameContainer">
-        <div class="gameArea">
+        <div id="gameArea" class="gameArea">
           This is where game activity will go.
         </div>
         <div class="controls">
-          <a href="#" class="suggestionBox actionBtn">&gt;</a>
+          <a href="#" id="suggest" class="suggestionBox actionBtn">&gt;</a>
           <ul class="suggestions">
             <li cmd="look">Look</li>
             <li cmd="move">Move</li>
@@ -19,7 +19,7 @@
             <li cmd="fight">Fight</li>
           </ul>
           <input type="text" id="command" placeholder="Enter command" class="commands" />
-          <a href="#" class="submit actionBtn">Send</a>
+          <a href="#" id="sendBtn" class="submit actionBtn">Send</a>
         </div>
     </div>
   </body>
